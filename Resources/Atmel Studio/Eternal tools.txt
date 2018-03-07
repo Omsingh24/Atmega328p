@@ -1,0 +1,4 @@
+Command:  C:\WinAVR-20100110\bin\avrdude.exe
+
+Arguments:  avrdude -p m328p -c usbasp -P usb -v -U flash:w:$(ProjectDir)Debug\$(ItemFileName).hex:i 
+[use -F to override if any error in my case it was device signature]

@@ -1,0 +1,6 @@
+Use this command in command prompt:
+
+change chip name refering to avrdude ref document
+
+This command will flash the hex file. 
+{ avrdude -p m328p -c usbasp -P usb -v -U flash:w:filename.hex:i }
