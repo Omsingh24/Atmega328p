@@ -7,16 +7,13 @@
 
 int main(void)
 {
-	DDRC = 0xFF;
 	DDRB =0xFF; // Makes PORTC as Output
 	while(1) //infinite loop
 	{
 		PORTB = 0xFF; //Turns ON All LEDs
-		_delay_ms(1000); //1 second delay
-		PORTB &= ~(1<<PORTB1);
-		PORTC = 0xFF;
-		_delay_ms(1000);
-		PORTC= 0x00; //Turns OFF All LEDs
+		_delay_ms(5000); //1 second delay
+		PORTB= 0x00; //Turns OFF All LEDs
+		_delay_ms(5000);
 		 //1 second delay
 	}
 }
