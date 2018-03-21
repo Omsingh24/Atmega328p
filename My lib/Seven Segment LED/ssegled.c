@@ -55,7 +55,7 @@ void ssegledcc(unsigned int num)
 		}
 		if (dot==1)
 		{
-			seg_led_on  &= ~(1<<dp);
+			seg_led_on = (1<<dp);
 		}
 		
 }
